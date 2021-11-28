@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TrianglePattern</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <script>
+
+    function trianglePattern(){
+        let n = prompt("Enter a number to generate triangle pattern");
+          var str = '';
+          for(let i=1;i<=n; i++){
+
+            for(let j=1;j<=i; j++){
+              str = str + "* "
+            }
+            str += "\n";
+          }
+          for(let i=1;i<=n; i++){
+
+            for(let j=n-1;j>=i; j--){
+              str = str + "* "
+            }
+            str += "\n";
+          }
+          console.log(str);
+      }
+
+      trianglePattern();
+
+  </script>
+  <body>
+        <h2>Arrow Pattern</h2>
+        <h4>Please see output in console</h4>
+  </body>
+</html>
